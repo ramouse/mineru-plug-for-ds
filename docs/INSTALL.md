@@ -29,7 +29,7 @@ pwsh -File tools\install.ps1
 1. **工具立即生效**：补丁热加载后新会话（任何预设）即有 `parse_document` / `mineru_status` / `mineru_doctor`；可请求 Agent 运行 `mineru_doctor` 自检。
 2. **面板需重启一次 DSH**：浏览器 bundle 在进程启动时编入 boot 图；重启后刷新页面——侧边栏与输入框「📄 文档解析」入口、右下角拖拽面板出现。
 3. `http://127.0.0.1:3080/mineru/state` 返回 JSON 即 Host 半区在线。
-4. 「设置 → 插件」页可看到 mineru-plugin。
+4. dsh页面右下角可看到 **“文档解析”** 。 
 
 ## 卸载
 

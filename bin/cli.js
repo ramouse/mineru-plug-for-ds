@@ -138,9 +138,13 @@ function removePatchEntry(file) {
       continue // drop the mineru row lines
     }
     if (line.includes('installed by') && line.includes('mineru')) continue // our comment
+    if (/^\s*#.*mineru/i.test(line)) continue // any leftover installer comment
     out.push(line)
   }
-  fs.writeFileSync(file, out.join('\n').trimEnd() + '\n', 'utf8')
+  const clean = out.join('\n').trimEnd()
+  // An emptied patch file is not a valid loader patch list (must be a
+  // top-level YAML array) — write the empty array so DSH still boots.
+  fs.writeFileSync(file, (clean.trim() === '' ? '[]' : clean) + '\n', 'utf8')
 }
 
 function ensureLink(link, target) {

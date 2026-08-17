@@ -23,5 +23,9 @@
     "ocr",
     "plugin"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramouse/mineru-plug-for-ds.git"
+  },
   "license": "MIT"
 }

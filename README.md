@@ -30,7 +30,7 @@ mineru-dsh-plugin --data-dir D:\data # 自定义数据目录（上传文件 + �
 ## 备选安装（git clone + PowerShell）
 
 ```powershell
-git clone <your-repo-url>
+git clone https://github.com/ramouse/mineru-plug-for-ds.git
 cd mineru-dsh-plugin
 pwsh -File tools\install.ps1         # 全局插件（写补丁层 + junction）
 pwsh -File tools\install.ps1 -Uninstall

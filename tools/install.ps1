@@ -127,6 +127,7 @@ function Remove-PatchEntry([string]$file) {
   $clean = $raw -replace "# MinerU document parsing plugin \(installed by tools\\install\.ps1\)\s*\r?\n", ''
   $clean = $clean -replace '- insert:\s*\r?\n(\s+- id: mineru-plugin\s*\r?\n(\s+name: mineru-plugin\s*\r?\n)?(\s+config:\s*\r?\n(\s+projectDir:[^\r\n]*\s*\r?\n)?)?)+', ''
   $utf8 = New-Object System.Text.UTF8Encoding($false)
+  if ($clean.Trim() -eq '') { $clean = '[]' }
   [System.IO.File]::WriteAllText($file, $clean.TrimEnd() + [Environment]::NewLine, $utf8)
 }
 

@@ -1,6 +1,6 @@
 {
   "name": "mineru-dsh-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MinerU document parsing plugin for DSH (DeepSeek Harness): dual-mode cloud parsing (free Agent API / Standard API with token and auto-routing), agent tools, and a browser panel with drag-drop upload. One-command install via the bundled CLI.",
   "bin": {
     "mineru-dsh-plugin": "bin/cli.js"

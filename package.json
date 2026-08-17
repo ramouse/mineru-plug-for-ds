@@ -1,0 +1,27 @@
+{
+  "name": "mineru-dsh-plugin",
+  "version": "1.0.0",
+  "description": "MinerU document parsing plugin for DSH (DeepSeek Harness): dual-mode cloud parsing (free Agent API / Standard API with token and auto-routing), agent tools, and a browser panel with drag-drop upload. One-command install via the bundled CLI.",
+  "bin": {
+    "mineru-dsh-plugin": "bin/cli.js"
+  },
+  "files": [
+    "bin/",
+    "packages/mineru-plugin/",
+    "tools/mineru/mineru.py",
+    "tools/mineru/README.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "mineru",
+    "pdf",
+    "markdown",
+    "document-parser",
+    "ocr",
+    "plugin"
+  ],
+  "license": "MIT"
+}

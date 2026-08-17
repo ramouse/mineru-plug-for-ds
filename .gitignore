@@ -1,0 +1,15 @@
+# 运行时产物与本地私有文件
+.mineru/
+mi/
+1/
+
+# 旧版/过程文档
+docs/INSTALL-PENDING.md
+docs/INSTALLED.md
+tools/install-permanent.ps1
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
